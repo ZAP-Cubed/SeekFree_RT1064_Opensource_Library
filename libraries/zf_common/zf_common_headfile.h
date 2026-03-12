@@ -109,6 +109,7 @@
 #include "zf_device_wireless_uart.h"
 #include "zf_device_imu660ra.h"
 #include "zf_device_imu660rb.h"
+#include "zf_device_imu660rc.h"
 #include "zf_device_dl1a.h"
 #include "zf_device_dl1b.h"
 #include "zf_device_wifi_spi.h"

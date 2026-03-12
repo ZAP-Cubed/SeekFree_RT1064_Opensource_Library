@@ -1,3 +1,5 @@
+V3.11.0
+	增加imu660rc的驱动
 V3.10.0
 	增加imu660rb和imu660rx的驱动
 	更新wifi-spi驱动

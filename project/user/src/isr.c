@@ -205,7 +205,11 @@ void GPIO2_Combined_16_31_IRQHandler(void)
 
 void GPIO3_Combined_0_15_IRQHandler(void)
 {
-
+    if(exti_flag_get(IMU660RC_INT2_PIN))
+    {
+		imu660rc_callback();
+        exti_flag_clear(IMU660RC_INT2_PIN);// 清除中断标志位
+    }
     if(exti_flag_get(D4))
     {
         exti_flag_clear(D4);// 清除中断标志位
